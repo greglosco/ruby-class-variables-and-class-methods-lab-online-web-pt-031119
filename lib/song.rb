@@ -41,11 +41,11 @@ class Song
     artist_count = {}
     @@artists.each {|artist|
       if artist_count[artist]
-        genre_count[genre] += 1
-      else genre_count[genre] = 1
+        artist_count[artist] += 1
+      else artist_count[artist] = 1
     end
     }
-    genre_count
+    artist_count
   end 
   
 end
